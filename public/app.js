@@ -18,9 +18,6 @@ let conditions = [
 const ticTacToe = (element, index) => {
     // Your game logic here
     if(cells[index]==="&&isGameActive()){
-
-
-    
         cells[index]=currentPlayer;
         element.textContent=currentPlayer;
 
@@ -39,7 +36,19 @@ const ticTacToe = (element, index) => {
 
    
 };
-const
+const isGameActive=() =>{
+    return result.textContent ==="";
+};
+const checkWin=(player) =>{
+    for(let condition of conditions){
+        const[a,b,c] = condition;
+        if(cells[a]===player && cells[b]===player && cells[c]===player){
+            return true;
+        }
+    }
+    return false;
+};
+const isBoardFull=() =>
 
     /*
     **Part 2: Reset Function (Add your code here)**
