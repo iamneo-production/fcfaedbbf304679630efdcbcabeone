@@ -17,11 +17,11 @@ let conditions = [
 // Function to handle player moves
 const ticTacToe = (element, index) => {
     // Your game logic here
-    if(cells[index]==="&&isGameActive()){
-
+    if(cells[index]==="&&isGameActive())
+{
         cells[index]=currentPlayer;
         element.textContent=currentPlayer;
-    }
+    
         if(checkWin(currentPlayer)){
             result.textContent=`player ${currentPlayer} Wins!`;
             disableButtons();
@@ -32,7 +32,7 @@ const ticTacToe = (element, index) => {
             currentPlayer=(currentPlayer==='X')? 'O':'X';
             result.textContent=`Player ${currentPlayer}'s turn`;
         }
-    
+    }
 };
 const isGameActive=() =>{
     return result.textContent ===";
