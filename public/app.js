@@ -17,25 +17,29 @@ let conditions = [
 // Function to handle player moves
 const ticTacToe = (element, index) => {
     // Your game logic here
-    if(cells[index]==="&&isGameActive())
-{
-    cells[index]=currentPlayer;
-    element.textContent=currentPlayer;
+    if(cells[index]==="&&isGameActive()){
 
-    if(checkWin(currentPlayer)){
-        result.textContent=`player ${currentPlayer} Wins!`;
-        disableButtons();
-    }else if(isBoardFull()){
-        result.textContent="it is a draw!";
-        disableButtons();
-    }else{
-        currentPlayer=(currentPlayer==='X')? 'O':'X';
-        result.textContent=`Player ${currentPlayer}'s turn`;
+
+    
+        cells[index]=currentPlayer;
+        element.textContent=currentPlayer;
+
+        if(checkWin(currentPlayer)){
+            result.textContent=`player ${currentPlayer} Wins!`;
+            disableButtons();
+        }else if(isBoardFull()){
+            result.textContent="it is a draw!";
+            disableButtons();
+        }else{
+            currentPlayer=(currentPlayer==='X')? 'O':'X';
+            result.textContent=`Player ${currentPlayer}'s turn`;
+        }
     }
-}
+
 
    
 };
+const
 
     /*
     **Part 2: Reset Function (Add your code here)**
