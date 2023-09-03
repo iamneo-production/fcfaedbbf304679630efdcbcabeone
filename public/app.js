@@ -17,7 +17,8 @@ let conditions = [
 // Function to handle player moves
 const ticTacToe = (element, index) => {
     // Your game logic here
-    if(cells[index]==="&&isGameActive()){
+    if(cells[index]==="&&isGameActive())
+{
         cells[index]=currentPlayer;
         element.textContent=currentPlayer;
 
@@ -32,9 +33,6 @@ const ticTacToe = (element, index) => {
             result.textContent=`Player ${currentPlayer}'s turn`;
         }
     }
-
-
-   
 };
 const isGameActive=() =>{
     return result.textContent ==="";
@@ -66,7 +64,7 @@ const disableButtons=() =>{
 
 // Function to reset the game
 const resetGame = () => {
-    cells=[", ", ", ", ", ", ", ", ",];
+    cells=[",",",",",",",","];
     currentPlayer ='X';
     btns.forEach(btn =>btn.textContent=");
     result.textContent=`Player ${currentPlayer} turn`;
