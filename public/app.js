@@ -48,7 +48,12 @@ const checkWin=(player) =>{
     }
     return false;
 };
-const isBoardFull=() =>
+const isBoardFull=() =>{
+    return cells.every(cell => cell!=="");
+};
+const disableButtons=() =>{
+    btns.forEach(btn =>btn.disabled=true);
+};
 
     /*
     **Part 2: Reset Function (Add your code here)**
@@ -61,14 +66,10 @@ const isBoardFull=() =>
 
 // Function to reset the game
 const resetGame = () => {
-    // Your code to reset the game state
-    // ...
-
-    // Your code to update the 'result' element
-    // ...
-
-    // Your code to re-enable buttons
-    // ...
+    cells=[", ", ", ", ", ", ", ", ",];
+    currentPlayer ='X';
+    btns.forEach(btn =>btn.textContent=");
+    result.
 };
 
 btns.forEach((btn, i) => {
