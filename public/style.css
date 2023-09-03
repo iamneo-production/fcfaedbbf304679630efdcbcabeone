@@ -67,7 +67,11 @@ header{
   padding:10px 20px;
   font-size: 20px;
   background-color: #fff;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, clolor 0.3s;
+}
+#reset-button:hover{
+  background-color: black;
+  color:#fff;
 }
   
 /* Enter your styling here */
